@@ -15,6 +15,9 @@
 		4C63CE4D1F3BA43D0056722A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C63CE4B1F3BA43D0056722A /* LaunchScreen.storyboard */; };
 		4C63CE581F3BA43D0056722A /* OsirisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C63CE571F3BA43D0056722A /* OsirisTests.swift */; };
 		4C63CE631F3BA43D0056722A /* OsirisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C63CE621F3BA43D0056722A /* OsirisUITests.swift */; };
+		4C63CE711F3BA6500056722A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C63CE701F3BA6500056722A /* GoogleService-Info.plist */; };
+		4C63CE731F3BAAF50056722A /* OsirisService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C63CE721F3BAAF50056722A /* OsirisService.swift */; };
+		79427B78A739082232C46732 /* Pods_Osiris.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F3FBCE14BE344BC4B39081F /* Pods_Osiris.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,11 @@
 		4C63CE5E1F3BA43D0056722A /* OsirisUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OsirisUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C63CE621F3BA43D0056722A /* OsirisUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OsirisUITests.swift; sourceTree = "<group>"; };
 		4C63CE641F3BA43D0056722A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C63CE701F3BA6500056722A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		4C63CE721F3BAAF50056722A /* OsirisService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OsirisService.swift; sourceTree = "<group>"; };
+		55D9A1E06F57DB495229B489 /* Pods-Osiris.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Osiris.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Osiris/Pods-Osiris.debug.xcconfig"; sourceTree = "<group>"; };
+		7F3FBCE14BE344BC4B39081F /* Pods_Osiris.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Osiris.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E932660E8C54F59017C86ED9 /* Pods-Osiris.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Osiris.release.xcconfig"; path = "Pods/Target Support Files/Pods-Osiris/Pods-Osiris.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79427B78A739082232C46732 /* Pods_Osiris.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +85,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C0FDFEA337A6144F5408362 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F3FBCE14BE344BC4B39081F /* Pods_Osiris.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4C63CE341F3BA43D0056722A = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +100,8 @@
 				4C63CE561F3BA43D0056722A /* OsirisTests */,
 				4C63CE611F3BA43D0056722A /* OsirisUITests */,
 				4C63CE3E1F3BA43D0056722A /* Products */,
+				DBBBC24CE795D5B3FCEC7CF4 /* Pods */,
+				4C0FDFEA337A6144F5408362 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,9 +118,11 @@
 		4C63CE3F1F3BA43D0056722A /* Osiris */ = {
 			isa = PBXGroup;
 			children = (
+				4C63CE701F3BA6500056722A /* GoogleService-Info.plist */,
 				4C63CE401F3BA43D0056722A /* AppDelegate.swift */,
 				4C63CE421F3BA43D0056722A /* FirstViewController.swift */,
 				4C63CE441F3BA43D0056722A /* SecondViewController.swift */,
+				4C63CE721F3BAAF50056722A /* OsirisService.swift */,
 				4C63CE461F3BA43D0056722A /* Main.storyboard */,
 				4C63CE491F3BA43D0056722A /* Assets.xcassets */,
 				4C63CE4B1F3BA43D0056722A /* LaunchScreen.storyboard */,
@@ -128,6 +149,15 @@
 			path = OsirisUITests;
 			sourceTree = "<group>";
 		};
+		DBBBC24CE795D5B3FCEC7CF4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				55D9A1E06F57DB495229B489 /* Pods-Osiris.debug.xcconfig */,
+				E932660E8C54F59017C86ED9 /* Pods-Osiris.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +165,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C63CE671F3BA43D0056722A /* Build configuration list for PBXNativeTarget "Osiris" */;
 			buildPhases = (
+				1C4EC2FF85D7A9A1A5C1ECC1 /* [CP] Check Pods Manifest.lock */,
 				4C63CE391F3BA43D0056722A /* Sources */,
 				4C63CE3A1F3BA43D0056722A /* Frameworks */,
 				4C63CE3B1F3BA43D0056722A /* Resources */,
+				E56C9F05769C7A3FAF35EAFE /* [CP] Embed Pods Frameworks */,
+				BACBE019CF1E9C7F60DB2854 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -239,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C63CE4D1F3BA43D0056722A /* LaunchScreen.storyboard in Resources */,
+				4C63CE711F3BA6500056722A /* GoogleService-Info.plist in Resources */,
 				4C63CE4A1F3BA43D0056722A /* Assets.xcassets in Resources */,
 				4C63CE481F3BA43D0056722A /* Main.storyboard in Resources */,
 			);
@@ -260,11 +294,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1C4EC2FF85D7A9A1A5C1ECC1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Osiris-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BACBE019CF1E9C7F60DB2854 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Osiris/Pods-Osiris-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E56C9F05769C7A3FAF35EAFE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Osiris/Pods-Osiris-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Osiris/Pods-Osiris-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4C63CE391F3BA43D0056722A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C63CE731F3BAAF50056722A /* OsirisService.swift in Sources */,
 				4C63CE451F3BA43D0056722A /* SecondViewController.swift in Sources */,
 				4C63CE411F3BA43D0056722A /* AppDelegate.swift in Sources */,
 				4C63CE431F3BA43D0056722A /* FirstViewController.swift in Sources */,
@@ -419,6 +512,7 @@
 		};
 		4C63CE681F3BA43D0056722A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55D9A1E06F57DB495229B489 /* Pods-Osiris.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = F7XY5R7QXY;
@@ -432,6 +526,7 @@
 		};
 		4C63CE691F3BA43D0056722A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E932660E8C54F59017C86ED9 /* Pods-Osiris.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = F7XY5R7QXY;
@@ -520,6 +615,7 @@
 				4C63CE691F3BA43D0056722A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4C63CE6A1F3BA43D0056722A /* Build configuration list for PBXNativeTarget "OsirisTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +624,7 @@
 				4C63CE6C1F3BA43D0056722A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4C63CE6D1F3BA43D0056722A /* Build configuration list for PBXNativeTarget "OsirisUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +633,7 @@
 				4C63CE6F1F3BA43D0056722A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
