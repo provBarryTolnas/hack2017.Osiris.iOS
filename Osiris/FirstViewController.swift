@@ -15,11 +15,17 @@ class FirstViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
-    @IBAction func sendButtonTapped(_ sender: Any) {
-        let updates = "Dude!"
-        service.send(updates)
+    
+    @IBAction func availableButtonTapped(_ sender: Any) {
+        let updates = ""
+        service.sendAvailable()
     }
+    
+    @IBAction func fullButtonTapped(_ sender: Any) {
+        let updates = "Dude!"
+        service.sendFull()
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
