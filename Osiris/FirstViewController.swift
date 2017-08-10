@@ -9,21 +9,22 @@
 import UIKit
 
 class FirstViewController: UIViewController {
-    @IBOutlet weak var sendButton: UIButton!
-
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
     
     @IBAction func availableButtonTapped(_ sender: Any) {
-        let updates = ""
         service.sendAvailable()
     }
     
     @IBAction func fullButtonTapped(_ sender: Any) {
-        let updates = "Dude!"
         service.sendFull()
+    }
+    
+    @IBAction func waitTimeChanged(_ sender: UISlider) {
+        
     }
     
     override func didReceiveMemoryWarning() {
