@@ -49,7 +49,7 @@ class  OsirisService {
         return model
     }
     
-    func sendIsAccepting(isAccepting: Bool) {
+    func send(isAccepting: Bool) {
          realtimeRef?.updateChildValues([ "acceptingNow/value" : isAccepting])
     }
     

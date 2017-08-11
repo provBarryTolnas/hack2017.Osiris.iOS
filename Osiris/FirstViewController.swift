@@ -22,7 +22,7 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var availabilityView: UIView!
     @IBOutlet weak var insuranceView: UIView!
    
-    @IBOutlet weak var waitTimeLabel: UILabel!
+    @IBOutlet weak var availableSwitch: UISwitch!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,17 +33,15 @@ class FirstViewController: UIViewController {
 
         
         service.onUpdate = { [weak self] model in
-            print("Refresh FirstViewController")
+            print("refresh")
+            self?.availableSwitch.isOn = model.acceptingNow
         }
     }
     
-    @IBAction func availableButtonTapped(_ sender: Any) {
-        service.sendIsAccepting(isAccepting: true)
+    @IBAction func availableSwitchChanged(_ theSwitch: UISwitch) {
+        service.send(isAccepting: theSwitch.isOn)
     }
     
-    @IBAction func fullButtonTapped(_ sender: Any) {
-        service.sendIsAccepting(isAccepting: false)
-    }
     
     @IBAction func waitTimeChanged(_ sender: UISlider) {
         
