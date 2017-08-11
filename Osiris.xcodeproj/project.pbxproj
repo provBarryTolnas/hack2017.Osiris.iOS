@@ -20,6 +20,9 @@
 		4C63CE761F3D360F0056722A /* OsirisModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C63CE741F3D360F0056722A /* OsirisModel.swift */; };
 		4C63CE841F3D77760056722A /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = 4C63CE831F3D77760056722A /* Fonts */; };
 		4C63CE851F3D77760056722A /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = 4C63CE831F3D77760056722A /* Fonts */; };
+		4C63CE871F3D84C30056722A /* AvailabilityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C63CE861F3D84C30056722A /* AvailabilityView.swift */; };
+		4C63CE881F3D84C30056722A /* AvailabilityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C63CE861F3D84C30056722A /* AvailabilityView.swift */; };
+		4C63CE891F3D84E00056722A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C63CE421F3BA43D0056722A /* FirstViewController.swift */; };
 		79427B78A739082232C46732 /* Pods_Osiris.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F3FBCE14BE344BC4B39081F /* Pods_Osiris.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +61,7 @@
 		4C63CE721F3BAAF50056722A /* OsirisService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OsirisService.swift; sourceTree = "<group>"; };
 		4C63CE741F3D360F0056722A /* OsirisModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OsirisModel.swift; sourceTree = "<group>"; };
 		4C63CE831F3D77760056722A /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Fonts; sourceTree = "<group>"; };
+		4C63CE861F3D84C30056722A /* AvailabilityView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvailabilityView.swift; sourceTree = "<group>"; };
 		55D9A1E06F57DB495229B489 /* Pods-Osiris.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Osiris.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Osiris/Pods-Osiris.debug.xcconfig"; sourceTree = "<group>"; };
 		7F3FBCE14BE344BC4B39081F /* Pods_Osiris.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Osiris.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E932660E8C54F59017C86ED9 /* Pods-Osiris.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Osiris.release.xcconfig"; path = "Pods/Target Support Files/Pods-Osiris/Pods-Osiris.release.xcconfig"; sourceTree = "<group>"; };
@@ -132,6 +136,7 @@
 				4C63CE461F3BA43D0056722A /* Main.storyboard */,
 				4C63CE4B1F3BA43D0056722A /* LaunchScreen.storyboard */,
 				4C63CE4E1F3BA43D0056722A /* Info.plist */,
+				4C63CE861F3D84C30056722A /* AvailabilityView.swift */,
 			);
 			path = Osiris;
 			sourceTree = "<group>";
@@ -365,6 +370,7 @@
 				4C63CE731F3BAAF50056722A /* OsirisService.swift in Sources */,
 				4C63CE411F3BA43D0056722A /* AppDelegate.swift in Sources */,
 				4C63CE431F3BA43D0056722A /* FirstViewController.swift in Sources */,
+				4C63CE871F3D84C30056722A /* AvailabilityView.swift in Sources */,
 				4C63CE751F3D360F0056722A /* OsirisModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -373,8 +379,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C63CE881F3D84C30056722A /* AvailabilityView.swift in Sources */,
 				4C63CE761F3D360F0056722A /* OsirisModel.swift in Sources */,
 				4C63CE581F3BA43D0056722A /* OsirisTests.swift in Sources */,
+				4C63CE891F3D84E00056722A /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
