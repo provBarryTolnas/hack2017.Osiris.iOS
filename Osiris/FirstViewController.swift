@@ -8,9 +8,6 @@
 
 import UIKit
 
-fileprivate let acceptingInsuranceColor = UIColor(red: 86.0/255, green: 161.0/255, blue: 213.0/255, alpha: 1)
-fileprivate let notAcceptingInsuranceColor = UIColor(white: 0.88, alpha: 1.0)
-
 func applyShadow(_ view: UIView) {
     view.layer.shadowOffset = CGSize(width: 0, height: 2)
     view.layer.shadowRadius = 4
@@ -43,6 +40,8 @@ class FirstViewController: UIViewController, UICollectionViewDataSource, UIColle
 
         waitTimePicker.layer.borderColor = UIColor(colorLiteralRed: 0, green: 0, blue: 0, alpha: 0.12).cgColor
         waitTimePicker.layer.borderWidth = 1
+        
+        insuranceCollectionView.register(UINib(nibName:"InsuranceCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "InsuranceCell")
         
         service.onUpdate = { [weak self] model in
             self?.model = model
@@ -90,12 +89,11 @@ class FirstViewController: UIViewController, UICollectionViewDataSource, UIColle
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "InsuranceCell", for: indexPath)
-        if let label = cell.viewWithTag(999) as? UILabel,
-           let model = self.model {
+        if let cell = cell as? InsuranceCollectionViewCell,
+            let model = model {
             let insurance = model.insurance[indexPath.item]
-            label.text = insurance.name
-            cell.backgroundColor = insurance.isAccepted ? acceptingInsuranceColor : notAcceptingInsuranceColor
-            
+            cell.insuranceName = insurance.name
+            cell.isAccepted = insurance.isAccepted
         }
         return cell
     }

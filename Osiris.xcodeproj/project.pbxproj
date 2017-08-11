@@ -25,6 +25,10 @@
 		4C63CE8D1F3D88700056722A /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4C63CE8A1F3D88700056722A /* Roboto-Medium.ttf */; };
 		4C63CE8E1F3D88700056722A /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4C63CE8B1F3D88700056722A /* Roboto-Regular.ttf */; };
 		4C63CE8F1F3D88700056722A /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4C63CE8B1F3D88700056722A /* Roboto-Regular.ttf */; };
+		4CF4FC9B1F3DE664003FB089 /* InsuranceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF4FC991F3DE664003FB089 /* InsuranceCollectionViewCell.swift */; };
+		4CF4FC9C1F3DE664003FB089 /* InsuranceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF4FC991F3DE664003FB089 /* InsuranceCollectionViewCell.swift */; };
+		4CF4FC9D1F3DE664003FB089 /* InsuranceCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CF4FC9A1F3DE664003FB089 /* InsuranceCollectionViewCell.xib */; };
+		4CF4FC9E1F3DE664003FB089 /* InsuranceCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CF4FC9A1F3DE664003FB089 /* InsuranceCollectionViewCell.xib */; };
 		79427B78A739082232C46732 /* Pods_Osiris.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F3FBCE14BE344BC4B39081F /* Pods_Osiris.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +69,8 @@
 		4C63CE861F3D84C30056722A /* AvailabilityView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvailabilityView.swift; sourceTree = "<group>"; };
 		4C63CE8A1F3D88700056722A /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		4C63CE8B1F3D88700056722A /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		4CF4FC991F3DE664003FB089 /* InsuranceCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsuranceCollectionViewCell.swift; sourceTree = "<group>"; };
+		4CF4FC9A1F3DE664003FB089 /* InsuranceCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InsuranceCollectionViewCell.xib; sourceTree = "<group>"; };
 		55D9A1E06F57DB495229B489 /* Pods-Osiris.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Osiris.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Osiris/Pods-Osiris.debug.xcconfig"; sourceTree = "<group>"; };
 		7F3FBCE14BE344BC4B39081F /* Pods_Osiris.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Osiris.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E932660E8C54F59017C86ED9 /* Pods-Osiris.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Osiris.release.xcconfig"; path = "Pods/Target Support Files/Pods-Osiris/Pods-Osiris.release.xcconfig"; sourceTree = "<group>"; };
@@ -133,6 +139,8 @@
 				4C63CE701F3BA6500056722A /* GoogleService-Info.plist */,
 				4C63CE401F3BA43D0056722A /* AppDelegate.swift */,
 				4C63CE421F3BA43D0056722A /* FirstViewController.swift */,
+				4CF4FC991F3DE664003FB089 /* InsuranceCollectionViewCell.swift */,
+				4CF4FC9A1F3DE664003FB089 /* InsuranceCollectionViewCell.xib */,
 				4C63CE741F3D360F0056722A /* OsirisModel.swift */,
 				4C63CE721F3BAAF50056722A /* OsirisService.swift */,
 				4C63CE461F3BA43D0056722A /* Main.storyboard */,
@@ -296,6 +304,7 @@
 				4C63CE8E1F3D88700056722A /* Roboto-Regular.ttf in Resources */,
 				4C63CE8C1F3D88700056722A /* Roboto-Medium.ttf in Resources */,
 				4C63CE4D1F3BA43D0056722A /* LaunchScreen.storyboard in Resources */,
+				4CF4FC9D1F3DE664003FB089 /* InsuranceCollectionViewCell.xib in Resources */,
 				4C63CE711F3BA6500056722A /* GoogleService-Info.plist in Resources */,
 				4C63CE4A1F3BA43D0056722A /* Assets.xcassets in Resources */,
 				4C63CE481F3BA43D0056722A /* Main.storyboard in Resources */,
@@ -307,6 +316,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C63CE8F1F3D88700056722A /* Roboto-Regular.ttf in Resources */,
+				4CF4FC9E1F3DE664003FB089 /* InsuranceCollectionViewCell.xib in Resources */,
 				4C63CE8D1F3D88700056722A /* Roboto-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -386,6 +396,7 @@
 				4C63CE431F3BA43D0056722A /* FirstViewController.swift in Sources */,
 				4C63CE871F3D84C30056722A /* AvailabilityView.swift in Sources */,
 				4C63CE751F3D360F0056722A /* OsirisModel.swift in Sources */,
+				4CF4FC9B1F3DE664003FB089 /* InsuranceCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +406,7 @@
 			files = (
 				4C63CE881F3D84C30056722A /* AvailabilityView.swift in Sources */,
 				4C63CE761F3D360F0056722A /* OsirisModel.swift in Sources */,
+				4CF4FC9C1F3DE664003FB089 /* InsuranceCollectionViewCell.swift in Sources */,
 				4C63CE581F3BA43D0056722A /* OsirisTests.swift in Sources */,
 				4C63CE891F3D84E00056722A /* FirstViewController.swift in Sources */,
 			);
