@@ -53,21 +53,57 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" misplaced="YES" id="GCi-XT-rff" userLabel="Availability" customClass="AvailabilityView" customModule="Osiris">
-                                <rect key="frame" x="43" y="222" width="332" height="605"/>
+                                <rect key="frame" x="40" y="222" width="332" height="605"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="BedIcon" id="Fki-Ze-0fW" userLabel="Availability Icon">
+                                        <rect key="frame" x="16" y="16" width="24" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Update Availability" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qig-I4-Zeb">
+                                        <rect key="frame" x="59" y="16" width="260" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="13"/>
+                                        <color key="textColor" white="0.0" alpha="0.87" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" misplaced="YES" id="zX6-6Y-i6a" userLabel="Horizontal Rule">
+                                        <rect key="frame" x="16" y="48" width="300" height="1"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.12" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" misplaced="YES" id="01t-yX-mdZ" userLabel="Insurance">
-                                <rect key="frame" x="403" y="222" width="332" height="605"/>
+                                <rect key="frame" x="400" y="222" width="332" height="605"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="InsuranceIcon" id="0tZ-AC-HDD" userLabel="Insurance Icon">
+                                        <rect key="frame" x="16" y="16" width="24" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Update Insurance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8S3-Xj-Fzj" userLabel="Update Insurance">
+                                        <rect key="frame" x="54" y="16" width="260" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="13"/>
+                                        <color key="textColor" white="0.0" alpha="0.87" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" misplaced="YES" id="oI7-KG-fQt" userLabel="Horizontal Rule">
+                                        <rect key="frame" x="16" y="48" width="300" height="1"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.12" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="SoundMentalLogo" id="5ZW-j2-LtW">
-                                <rect key="frame" x="43" y="104" width="96" height="96"/>
+                                <rect key="frame" x="40" y="104" width="96" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Sound Mental Health of Seattle" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="30" id="6eO-fV-SFP">
-                                <rect key="frame" x="200" y="108" width="535" height="88"/>
+                                <rect key="frame" x="197" y="108" width="535" height="88"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="34"/>
                                 <color key="textColor" white="0.46000000000000002" alpha="1" colorSpace="calibratedWhite"/>
@@ -89,7 +125,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="BedIcon" width="27" height="24"/>
         <image name="CareIQLogo" width="82" height="40"/>
+        <image name="InsuranceIcon" width="20" height="24"/>
         <image name="SoundMentalLogo" width="104" height="104"/>
         <image name="first" width="30" height="30"/>
     </resources>
