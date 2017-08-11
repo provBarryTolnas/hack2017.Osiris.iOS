@@ -38,8 +38,8 @@ class  OsirisService {
             }
         }
     }
-
-     private class func model(fromSnapshot snapshot: DataSnapshot) -> OsirisModel? {
+    
+    private class func model(fromSnapshot snapshot: DataSnapshot) -> OsirisModel? {
         guard let numberOfBeds = snapshot.childSnapshot(forPath: "numberOfBeds/value").value as? Int,
             let waitTime = snapshot.childSnapshot(forPath: "waitTime/value").value as? Int,
             let acceptingNow = snapshot.childSnapshot(forPath: "acceptingNow/value").value as? Bool
@@ -47,25 +47,25 @@ class  OsirisService {
                 return nil
         }
         
-        let insuranceSnapshots = snapshot.childSnapshot(forPath: "acceptingInsurance")
-        guard insuranceSnapshots.hasChildren() else {
+        var insurance: [Insurance] = []
+        
+        let insuranceSnapshot: DataSnapshot = snapshot.childSnapshot(forPath: "acceptedInsurance/value")
+        guard insuranceSnapshot.hasChildren() else {
             return nil
         }
-        
-        let insurance = insuranceSnapshots.children.flatMap { (ins) -> Insurance in
-            guard let snap = ins as? DataSnapshot else {
-                return Insurance(name: "", isAccepted: false)
-            }
-            
-            if let dict = snap.value as? NSDictionary,
-                let isAccepted = dict["value"] as? Bool {
-                let name = snap.key
-                return Insurance(name:  name, isAccepted: isAccepted )
-            }
-            
-            return Insurance(name: "", isAccepted: false)
-            
+
+        guard let insurerDict = insuranceSnapshot.value as? NSDictionary else {
+            print("No insurers found.")
+            return nil
         }
+
+        for name in insurerDict.allKeys {
+            let nameString = name as! String
+            let ins = insurerDict[name] as! NSDictionary
+            let isAccepted = ins["value"] as! Bool
+            insurance.append(Insurance(name: nameString, isAccepted: isAccepted))
+        }
+        
         let model = OsirisModel(numberOfBeds: numberOfBeds, waitTime: waitTime, acceptingNow: acceptingNow, insurance: insurance, lastUpdated: Date())
         return model
     }
