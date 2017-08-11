@@ -10,17 +10,22 @@ import UIKit
 
 class FirstViewController: UIViewController {
    
+    @IBOutlet weak var waitTimeLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.tabBarItem.title = "Psych Hospital"
+        service.onUpdate = { [weak self] model in
+            print("Refresh FirstViewController")
+        }
     }
     
     @IBAction func availableButtonTapped(_ sender: Any) {
-        service.sendAvailable()
+        service.sendIsAccepting(isAccepting: true)
     }
     
     @IBAction func fullButtonTapped(_ sender: Any) {
-        service.sendFull()
+        service.sendIsAccepting(isAccepting: false)
     }
     
     @IBAction func waitTimeChanged(_ sender: UISlider) {

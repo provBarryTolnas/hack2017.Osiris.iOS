@@ -17,6 +17,8 @@
 		4C63CE631F3BA43D0056722A /* OsirisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C63CE621F3BA43D0056722A /* OsirisUITests.swift */; };
 		4C63CE711F3BA6500056722A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C63CE701F3BA6500056722A /* GoogleService-Info.plist */; };
 		4C63CE731F3BAAF50056722A /* OsirisService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C63CE721F3BAAF50056722A /* OsirisService.swift */; };
+		4C63CE751F3D360F0056722A /* OsirisModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C63CE741F3D360F0056722A /* OsirisModel.swift */; };
+		4C63CE761F3D360F0056722A /* OsirisModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C63CE741F3D360F0056722A /* OsirisModel.swift */; };
 		79427B78A739082232C46732 /* Pods_Osiris.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F3FBCE14BE344BC4B39081F /* Pods_Osiris.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +56,7 @@
 		4C63CE641F3BA43D0056722A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C63CE701F3BA6500056722A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		4C63CE721F3BAAF50056722A /* OsirisService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OsirisService.swift; sourceTree = "<group>"; };
+		4C63CE741F3D360F0056722A /* OsirisModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OsirisModel.swift; sourceTree = "<group>"; };
 		55D9A1E06F57DB495229B489 /* Pods-Osiris.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Osiris.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Osiris/Pods-Osiris.debug.xcconfig"; sourceTree = "<group>"; };
 		7F3FBCE14BE344BC4B39081F /* Pods_Osiris.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Osiris.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E932660E8C54F59017C86ED9 /* Pods-Osiris.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Osiris.release.xcconfig"; path = "Pods/Target Support Files/Pods-Osiris/Pods-Osiris.release.xcconfig"; sourceTree = "<group>"; };
@@ -127,6 +130,7 @@
 				4C63CE491F3BA43D0056722A /* Assets.xcassets */,
 				4C63CE4B1F3BA43D0056722A /* LaunchScreen.storyboard */,
 				4C63CE4E1F3BA43D0056722A /* Info.plist */,
+				4C63CE741F3D360F0056722A /* OsirisModel.swift */,
 			);
 			path = Osiris;
 			sourceTree = "<group>";
@@ -335,13 +339,11 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Osiris/Pods-Osiris-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -361,6 +363,7 @@
 				4C63CE451F3BA43D0056722A /* SecondViewController.swift in Sources */,
 				4C63CE411F3BA43D0056722A /* AppDelegate.swift in Sources */,
 				4C63CE431F3BA43D0056722A /* FirstViewController.swift in Sources */,
+				4C63CE751F3D360F0056722A /* OsirisModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,6 +371,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C63CE761F3D360F0056722A /* OsirisModel.swift in Sources */,
 				4C63CE581F3BA43D0056722A /* OsirisTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
