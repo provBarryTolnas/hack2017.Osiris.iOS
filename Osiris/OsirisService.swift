@@ -106,7 +106,7 @@ class  OsirisService {
         }
         
         if let isAccepted = matchingInsurance?.first?.isAccepted {
-            realtimeRef?.updateChildValues([ ("acceptingInsurance/" + name) : [ "value" : !isAccepted]])
+            realtimeRef?.updateChildValues([ ("acceptedInsurance/value/" + name) : [ "value" : !isAccepted]])
         }
     }
     
