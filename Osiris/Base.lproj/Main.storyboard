@@ -194,6 +194,13 @@
                                 <color key="textColor" white="0.46000000000000002" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Last Updated" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="y3S-1m-8jA">
+                                <rect key="frame" x="223" y="916" width="323" height="21"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.95999999999999996" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -204,6 +211,7 @@
                         <outlet property="headerView" destination="W6t-au-RDH" id="SeT-BO-5HJ"/>
                         <outlet property="insuranceCollectionView" destination="EaM-g2-Qc8" id="Z2b-el-GjT"/>
                         <outlet property="insuranceView" destination="01t-yX-mdZ" id="hZn-YN-L8t"/>
+                        <outlet property="lastUpdatedLabel" destination="y3S-1m-8jA" id="Xyo-DV-Do3"/>
                         <outlet property="numberOfBedsLabel" destination="kWK-gq-Qii" id="TyJ-cQ-Bn8"/>
                         <outlet property="waitTimePicker" destination="T7o-Td-PJn" id="xi0-5Y-Ylw"/>
                     </connections>

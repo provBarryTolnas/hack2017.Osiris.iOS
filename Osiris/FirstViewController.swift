@@ -28,6 +28,7 @@ class FirstViewController: UIViewController, UICollectionViewDataSource, UIColle
     @IBOutlet weak var availableSwitch: UISwitch!
     @IBOutlet weak var waitTimePicker: UIDatePicker!
     @IBOutlet weak var numberOfBedsLabel: UILabel!
+    @IBOutlet weak var lastUpdatedLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,6 +58,7 @@ class FirstViewController: UIViewController, UICollectionViewDataSource, UIColle
         self.waitTimePicker.countDownDuration = model.waitTimeSeconds
         self.numberOfBedsLabel.text = String(model.numberOfBeds)
         self.insuranceCollectionView.reloadData()
+        self.lastUpdatedLabel.text = model.displayDate
     }
     
     @IBAction func availableSwitchChanged() {

@@ -66,7 +66,7 @@ class  OsirisService {
             return Insurance(name: "", isAccepted: false)
             
         }
-        let model = OsirisModel(numberOfBeds: numberOfBeds, waitTime: waitTime, acceptingNow: acceptingNow, insurance: insurance)
+        let model = OsirisModel(numberOfBeds: numberOfBeds, waitTime: waitTime, acceptingNow: acceptingNow, insurance: insurance, lastUpdated: Date())
         return model
     }
     
