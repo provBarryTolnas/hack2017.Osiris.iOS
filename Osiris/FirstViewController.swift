@@ -8,6 +8,9 @@
 
 import UIKit
 
+fileprivate let acceptingInsuranceColor = UIColor(red: 86.0/255, green: 161.0/255, blue: 213.0/255, alpha: 1)
+fileprivate let notAcceptingInsuranceColor = UIColor(white: 0.88, alpha: 1.0)
+
 func applyShadow(_ view: UIView) {
     view.layer.shadowOffset = CGSize(width: 0, height: 2)
     view.layer.shadowRadius = 4
@@ -91,7 +94,8 @@ class FirstViewController: UIViewController, UICollectionViewDataSource, UIColle
            let model = self.model {
             let insurance = model.insurance[indexPath.item]
             label.text = insurance.name
-            cell.backgroundColor = insurance.isAccepted ? UIColor.blue : UIColor.gray
+            cell.backgroundColor = insurance.isAccepted ? acceptingInsuranceColor : notAcceptingInsuranceColor
+            
         }
         return cell
     }
@@ -107,13 +111,11 @@ class FirstViewController: UIViewController, UICollectionViewDataSource, UIColle
         
         service.toggleInsuranceAccepted(name: insurance.name)
         
-    }
+        }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
 
