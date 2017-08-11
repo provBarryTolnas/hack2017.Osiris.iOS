@@ -116,27 +116,29 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="GKL-ag-VP4">
-                                        <rect key="frame" x="156" y="138" width="46" height="30"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="88" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kWK-gq-Qii" userLabel="Number Of Beds Label">
+                                        <rect key="frame" x="233" y="146" width="32" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="-"/>
-                                        <connections>
-                                            <action selector="decrementNumberOfBeds" destination="9pv-A4-QxB" eventType="touchUpInside" id="Hu2-Yz-acJ"/>
-                                        </connections>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kWK-gq-Qii" userLabel="Number Of Beds Label">
-                                        <rect key="frame" x="221" y="142" width="42" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8Ah-Sa-TGE">
-                                        <rect key="frame" x="282" y="138" width="46" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="8Ah-Sa-TGE">
+                                        <rect key="frame" x="275" y="140" width="44" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="+"/>
+                                        <state key="normal" image="Plus"/>
+                                        <state key="highlighted" image="PlusBlue"/>
                                         <connections>
                                             <action selector="incrementNumberOfBeds" destination="9pv-A4-QxB" eventType="touchUpInside" id="ou9-zv-Z3T"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="center" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="GKL-ag-VP4">
+                                        <rect key="frame" x="177" y="140" width="44" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="Minus"/>
+                                        <state key="highlighted" image="MinusBlue"/>
+                                        <connections>
+                                            <action selector="decrementNumberOfBeds" destination="9pv-A4-QxB" eventType="touchUpInside" id="Hu2-Yz-acJ"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -198,6 +200,10 @@
         <image name="BedIcon" width="27" height="24"/>
         <image name="CareIQLogo" width="82" height="40"/>
         <image name="InsuranceIcon" width="20" height="24"/>
+        <image name="Minus" width="20" height="20"/>
+        <image name="MinusBlue" width="20" height="20"/>
+        <image name="Plus" width="20" height="20"/>
+        <image name="PlusBlue" width="20" height="20"/>
         <image name="SoundMentalLogo" width="104" height="104"/>
         <image name="first" width="30" height="30"/>
     </resources>
