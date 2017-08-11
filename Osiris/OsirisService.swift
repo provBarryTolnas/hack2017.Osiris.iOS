@@ -63,12 +63,18 @@ class  OsirisService {
     
     @IBAction func decrementNumberOfBeds() {
         if let beds = model?.numberOfBeds {
-            send(numberOfBeds: min(0, beds - 1))
+            send(numberOfBeds: max(0, beds - 1))
         }
     }
     
     func send(numberOfBeds: Int) {
-        realtimeRef?.updateChildValues([ "numberOfBeds/value" : numberOfBeds])
+        
+        var updates: Dictionary<String,Any> = [ "numberOfBeds/value" : numberOfBeds]
+        
+        if numberOfBeds == 0 {
+            updates["acceptingNow/value"] = false
+        }
+        realtimeRef?.updateChildValues(updates)
     }
     
     func send(waitTime: Int) {
