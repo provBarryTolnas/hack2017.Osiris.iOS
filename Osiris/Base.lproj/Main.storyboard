@@ -94,10 +94,14 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <view contentMode="scaleToFill" misplaced="YES" id="gYc-7I-wyc" userLabel="Wait Time Background Color">
+                                        <rect key="frame" x="16" y="175" width="303" height="166"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.040000000000000001" colorSpace="calibratedWhite"/>
+                                    </view>
                                     <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="5" id="T7o-Td-PJn">
-                                        <rect key="frame" x="16" y="181" width="303" height="167"/>
+                                        <rect key="frame" x="16" y="175" width="303" height="166"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="0.95999999999999996" alpha="1" colorSpace="calibratedWhite"/>
                                         <date key="date" timeIntervalSinceReferenceDate="524132159.96712101">
                                             <!--2017-08-11 08:15:59 +0000-->
                                         </date>

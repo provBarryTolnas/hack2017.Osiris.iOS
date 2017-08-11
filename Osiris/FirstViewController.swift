@@ -28,10 +28,14 @@ class FirstViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        [headerView, availabilityView, insuranceView].forEach { view in
+        [headerView,
+         availabilityView,
+         insuranceView].forEach { view in
                 applyShadow(view)
         }
 
+        waitTimePicker.layer.borderColor = UIColor(colorLiteralRed: 0, green: 0, blue: 0, alpha: 0.12).cgColor
+        waitTimePicker.layer.borderWidth = 1
         
         service.onUpdate = { [weak self] model in
             print("refresh")
