@@ -8,13 +8,30 @@
 
 import UIKit
 
+func applyShadow(_ view: UIView) {
+    view.layer.shadowOffset = CGSize(width: 0, height: 2)
+    view.layer.shadowRadius = 4
+    view.layer.shadowColor = UIColor.black.cgColor
+    view.layer.shadowOpacity = 0.12
+    view.layer.masksToBounds = false
+    
+}
+
 class FirstViewController: UIViewController {
+    @IBOutlet weak var headerView: UIView!
+    @IBOutlet weak var availabilityView: UIView!
+    @IBOutlet weak var insuranceView: UIView!
    
     @IBOutlet weak var waitTimeLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tabBarItem.title = "Psych Hospital"
+        
+        [headerView, availabilityView, insuranceView].forEach { view in
+                applyShadow(view)
+        }
+
+        
         service.onUpdate = { [weak self] model in
             print("Refresh FirstViewController")
         }
