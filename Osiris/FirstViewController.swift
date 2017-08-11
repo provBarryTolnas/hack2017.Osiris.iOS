@@ -17,18 +17,13 @@ func applyShadow(_ view: UIView) {
     
 }
 
-class FirstViewController: UIViewController {
-    var model: OsirisModel? = nil {
-        willSet {
-            if let model = newValue {
-                refreshUI(model)
-            }
-        }
-    }
+class FirstViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+    var model: OsirisModel? = nil
     
     @IBOutlet weak var headerView: UIView!
     @IBOutlet weak var availabilityView: UIView!
     @IBOutlet weak var insuranceView: UIView!
+    @IBOutlet weak var insuranceCollectionView: UICollectionView!
    
     @IBOutlet weak var availableSwitch: UISwitch!
     @IBOutlet weak var waitTimePicker: UIDatePicker!
@@ -48,6 +43,9 @@ class FirstViewController: UIViewController {
         
         service.onUpdate = { [weak self] model in
             self?.model = model
+            DispatchQueue.main.async {
+                self?.refreshUI(model)
+            }
         }
     }
     
@@ -56,6 +54,7 @@ class FirstViewController: UIViewController {
         self.availableSwitch.isOn = model.acceptingNow
         self.waitTimePicker.countDownDuration = model.waitTimeSeconds
         self.numberOfBedsLabel.text = String(model.numberOfBeds)
+        self.insuranceCollectionView.reloadData()
     }
     
     @IBAction func availableSwitchChanged() {
@@ -74,6 +73,40 @@ class FirstViewController: UIViewController {
         let time = OsirisModel.minutes(fromSeconds: waitPicker.countDownDuration)
        
         service.send(waitTime: time)
+    }
+    
+    // MARK: UICollectionViewDataSource
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        if let model = self.model {
+            return model.insurance.count
+        }
+        
+        return 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "InsuranceCell", for: indexPath)
+        if let label = cell.viewWithTag(999) as? UILabel,
+           let model = self.model {
+            let insurance = model.insurance[indexPath.item]
+            label.text = insurance.name
+            cell.backgroundColor = insurance.isAccepted ? UIColor.blue : UIColor.gray
+        }
+        return cell
+    }
+    
+    // MARK: UICollectionViewDelegate
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard let model = self.model  else {
+            return
+        }
+        let insurance = model.insurance[indexPath.item]
+        print("didSelect: \(insurance)")
+        
+        service.toggleInsuranceAccepted(name: insurance.name)
+        
     }
     
     override func didReceiveMemoryWarning() {

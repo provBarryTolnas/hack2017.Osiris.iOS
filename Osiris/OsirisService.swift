@@ -47,7 +47,26 @@ class  OsirisService {
                 return nil
         }
         
-        let model = OsirisModel(numberOfBeds: numberOfBeds, waitTime: waitTime, acceptingNow: acceptingNow)
+        let insuranceSnapshots = snapshot.childSnapshot(forPath: "acceptingInsurance")
+        guard insuranceSnapshots.hasChildren() else {
+            return nil
+        }
+        
+        let insurance = insuranceSnapshots.children.flatMap { (ins) -> Insurance in
+            guard let snap = ins as? DataSnapshot else {
+                return Insurance(name: "", isAccepted: false)
+            }
+            
+            if let dict = snap.value as? NSDictionary,
+                let isAccepted = dict["value"] as? Bool {
+                let name = snap.key
+                return Insurance(name:  name, isAccepted: isAccepted )
+            }
+            
+            return Insurance(name: "", isAccepted: false)
+            
+        }
+        let model = OsirisModel(numberOfBeds: numberOfBeds, waitTime: waitTime, acceptingNow: acceptingNow, insurance: insurance)
         return model
     }
     
@@ -79,6 +98,16 @@ class  OsirisService {
     
     func send(waitTime: Int) {
         realtimeRef?.updateChildValues([ "waitTime/value" : waitTime])
+    }
+    
+    func toggleInsuranceAccepted(name: String) {
+        let matchingInsurance = self.model?.insurance.filter { (ins:Insurance) -> Bool in
+            return ins.name == name
+        }
+        
+        if let isAccepted = matchingInsurance?.first?.isAccepted {
+            realtimeRef?.updateChildValues([ ("acceptingInsurance/" + name) : [ "value" : !isAccepted]])
+        }
     }
     
 }

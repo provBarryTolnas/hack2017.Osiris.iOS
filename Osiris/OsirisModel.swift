@@ -7,10 +7,18 @@
 //
 import Foundation
 
+
+struct Insurance {
+    let name: String
+    let isAccepted: Bool
+}
+
+
 struct OsirisModel {
     let numberOfBeds: Int
     let waitTime: Int
     let acceptingNow: Bool
+    let insurance: [Insurance]
     
     // The UIDatePicker uses TimeInterval which is measured in seconds while the Osiris DB in Firebase uses integer minutes so we need some conversions both directions.
     var waitTimeSeconds: TimeInterval  {
