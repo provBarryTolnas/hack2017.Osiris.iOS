@@ -53,4 +53,12 @@ class  OsirisService {
          realtimeRef?.updateChildValues([ "acceptingNow/value" : isAccepting])
     }
     
+    func send(numberOfBeds: Int) {
+        realtimeRef?.updateChildValues([ "numberOfBeds/value" : numberOfBeds])
+    }
+    
+    func send(waitTime: Int) {
+        realtimeRef?.updateChildValues([ "waitTime/value" : waitTime])
+    }
+    
 }

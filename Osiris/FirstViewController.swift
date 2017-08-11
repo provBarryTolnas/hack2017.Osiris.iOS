@@ -23,6 +23,7 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var insuranceView: UIView!
    
     @IBOutlet weak var availableSwitch: UISwitch!
+    @IBOutlet weak var waitTimePicker: UIDatePicker!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +36,7 @@ class FirstViewController: UIViewController {
         service.onUpdate = { [weak self] model in
             print("refresh")
             self?.availableSwitch.isOn = model.acceptingNow
+            self?.waitTimePicker.countDownDuration = model.waitTimeSeconds
         }
     }
     
@@ -42,11 +44,12 @@ class FirstViewController: UIViewController {
         service.send(isAccepting: theSwitch.isOn)
     }
     
-    
-    @IBAction func waitTimeChanged(_ sender: UISlider) {
-        
+    @IBAction func waitTimeChanged(_ waitPicker: UIDatePicker) {
+        let time = OsirisModel.minutes(fromSeconds: waitPicker.countDownDuration)
+       
+        service.send(waitTime: time)
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
