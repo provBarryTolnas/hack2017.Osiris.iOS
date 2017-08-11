@@ -22,4 +22,8 @@ struct OsirisModel {
     static func minutes(fromSeconds seconds: TimeInterval) -> Int {
         return Int(round(seconds / 60.0))
     }
+    
+    static func beds(fromString bedString: String) -> Int? {
+        return Int(bedString)
+     }
 }

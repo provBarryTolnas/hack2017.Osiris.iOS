@@ -18,12 +18,21 @@ func applyShadow(_ view: UIView) {
 }
 
 class FirstViewController: UIViewController {
+    var model: OsirisModel? = nil {
+        willSet {
+            if let model = newValue {
+                refreshUI(model)
+            }
+        }
+    }
+    
     @IBOutlet weak var headerView: UIView!
     @IBOutlet weak var availabilityView: UIView!
     @IBOutlet weak var insuranceView: UIView!
    
     @IBOutlet weak var availableSwitch: UISwitch!
     @IBOutlet weak var waitTimePicker: UIDatePicker!
+    @IBOutlet weak var numberOfBedsLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,14 +47,27 @@ class FirstViewController: UIViewController {
         waitTimePicker.layer.borderWidth = 1
         
         service.onUpdate = { [weak self] model in
-            print("refresh")
-            self?.availableSwitch.isOn = model.acceptingNow
-            self?.waitTimePicker.countDownDuration = model.waitTimeSeconds
+            self?.model = model
         }
     }
     
-    @IBAction func availableSwitchChanged(_ theSwitch: UISwitch) {
-        service.send(isAccepting: theSwitch.isOn)
+    func refreshUI(_ model: OsirisModel) {
+        print("refresh")
+        self.availableSwitch.isOn = model.acceptingNow
+        self.waitTimePicker.countDownDuration = model.waitTimeSeconds
+        self.numberOfBedsLabel.text = String(model.numberOfBeds)
+    }
+    
+    @IBAction func availableSwitchChanged() {
+        service.send(isAccepting: availableSwitch.isOn)
+    }
+    
+    @IBAction func incrementNumberOfBeds() {
+        service.incrementNumberOfBeds()
+    }
+    
+    @IBAction func decrementNumberOfBeds() {
+        service.decrementNumberOfBeds()
     }
     
     @IBAction func waitTimeChanged(_ waitPicker: UIDatePicker) {
@@ -53,7 +75,7 @@ class FirstViewController: UIViewController {
        
         service.send(waitTime: time)
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

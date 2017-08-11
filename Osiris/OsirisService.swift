@@ -21,6 +21,7 @@ class  OsirisService {
     var db: DatabaseReference!
     private var providerRef: DatabaseReference? = nil
     private var realtimeRef: DatabaseReference? = nil
+    private var model: OsirisModel?
     
     init() {
         db = Database.database().reference()
@@ -31,13 +32,14 @@ class  OsirisService {
         providerRef = self.db.child(name)
         realtimeRef = self.db.child("realtime").child(name)
         realtimeRef?.observe(.value) { [weak self] (snapshot: DataSnapshot) in
-            if let model = self?.model(fromSnapshot: snapshot) {
+            if let model = OsirisService.model(fromSnapshot: snapshot) {
+                self?.model = model
                 self?.onUpdate?(model)
             }
         }
     }
 
-    private func model(fromSnapshot snapshot: DataSnapshot) -> OsirisModel? {
+     private class func model(fromSnapshot snapshot: DataSnapshot) -> OsirisModel? {
         guard let numberOfBeds = snapshot.childSnapshot(forPath: "numberOfBeds/value").value as? Int,
             let waitTime = snapshot.childSnapshot(forPath: "waitTime/value").value as? Int,
             let acceptingNow = snapshot.childSnapshot(forPath: "acceptingNow/value").value as? Bool
@@ -51,6 +53,18 @@ class  OsirisService {
     
     func send(isAccepting: Bool) {
          realtimeRef?.updateChildValues([ "acceptingNow/value" : isAccepting])
+    }
+    
+    @IBAction func incrementNumberOfBeds() {
+        if let beds = model?.numberOfBeds {
+            send(numberOfBeds: beds + 1)
+        }
+    }
+    
+    @IBAction func decrementNumberOfBeds() {
+        if let beds = model?.numberOfBeds {
+            send(numberOfBeds: min(0, beds - 1))
+        }
     }
     
     func send(numberOfBeds: Int) {
