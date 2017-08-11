@@ -12,6 +12,7 @@ struct OsirisModel {
     let waitTime: Int
     let acceptingNow: Bool
     
+    // The UIDatePicker uses TimeInterval which is measured in seconds while the Osiris DB in Firebase uses integer minutes so we need some conversions both directions.
     var waitTimeSeconds: TimeInterval  {
         get {
            return TimeInterval(waitTime * 60)
