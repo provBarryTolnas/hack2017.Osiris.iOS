@@ -50,7 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4C63CE3D1F3BA43D0056722A /* Osiris.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Osiris.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C63CE3D1F3BA43D0056722A /* CareIQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CareIQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C63CE401F3BA43D0056722A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C63CE421F3BA43D0056722A /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		4C63CE471F3BA43D0056722A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -126,7 +126,7 @@
 		4C63CE3E1F3BA43D0056722A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4C63CE3D1F3BA43D0056722A /* Osiris.app */,
+				4C63CE3D1F3BA43D0056722A /* CareIQ.app */,
 				4C63CE531F3BA43D0056722A /* OsirisTests.xctest */,
 				4C63CE5E1F3BA43D0056722A /* OsirisUITests.xctest */,
 			);
@@ -191,9 +191,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4C63CE3C1F3BA43D0056722A /* Osiris */ = {
+		4C63CE3C1F3BA43D0056722A /* CareIQ */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4C63CE671F3BA43D0056722A /* Build configuration list for PBXNativeTarget "Osiris" */;
+			buildConfigurationList = 4C63CE671F3BA43D0056722A /* Build configuration list for PBXNativeTarget "CareIQ" */;
 			buildPhases = (
 				1C4EC2FF85D7A9A1A5C1ECC1 /* [CP] Check Pods Manifest.lock */,
 				4C63CE391F3BA43D0056722A /* Sources */,
@@ -206,9 +206,9 @@
 			);
 			dependencies = (
 			);
-			name = Osiris;
+			name = CareIQ;
 			productName = Osiris;
-			productReference = 4C63CE3D1F3BA43D0056722A /* Osiris.app */;
+			productReference = 4C63CE3D1F3BA43D0056722A /* CareIQ.app */;
 			productType = "com.apple.product-type.application";
 		};
 		4C63CE521F3BA43D0056722A /* OsirisTests */ = {
@@ -289,7 +289,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4C63CE3C1F3BA43D0056722A /* Osiris */,
+				4C63CE3C1F3BA43D0056722A /* CareIQ */,
 				4C63CE521F3BA43D0056722A /* OsirisTests */,
 				4C63CE5D1F3BA43D0056722A /* OsirisUITests */,
 			);
@@ -425,12 +425,12 @@
 /* Begin PBXTargetDependency section */
 		4C63CE551F3BA43D0056722A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4C63CE3C1F3BA43D0056722A /* Osiris */;
+			target = 4C63CE3C1F3BA43D0056722A /* CareIQ */;
 			targetProxy = 4C63CE541F3BA43D0056722A /* PBXContainerItemProxy */;
 		};
 		4C63CE601F3BA43D0056722A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4C63CE3C1F3BA43D0056722A /* Osiris */;
+			target = 4C63CE3C1F3BA43D0056722A /* CareIQ */;
 			targetProxy = 4C63CE5F1F3BA43D0056722A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -648,7 +648,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4C63CE671F3BA43D0056722A /* Build configuration list for PBXNativeTarget "Osiris" */ = {
+		4C63CE671F3BA43D0056722A /* Build configuration list for PBXNativeTarget "CareIQ" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4C63CE681F3BA43D0056722A /* Debug */,
