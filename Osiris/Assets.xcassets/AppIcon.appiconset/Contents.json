@@ -97,55 +97,6 @@
       "idiom" : "ipad",
       "filename" : "appicon_167.png",
       "scale" : "2x"
-    },
-    {
-      "size" : "29x29",
-      "idiom" : "iphone",
-      "filename" : "appicon_29.png",
-      "unassigned" : true,
-      "scale" : "1x"
-    },
-    {
-      "size" : "57x57",
-      "idiom" : "iphone",
-      "filename" : "appicon_57.png",
-      "unassigned" : true,
-      "scale" : "1x"
-    },
-    {
-      "size" : "57x57",
-      "idiom" : "iphone",
-      "filename" : "appicon_114.png",
-      "unassigned" : true,
-      "scale" : "2x"
-    },
-    {
-      "size" : "50x50",
-      "idiom" : "ipad",
-      "filename" : "appicon_50.png",
-      "unassigned" : true,
-      "scale" : "1x"
-    },
-    {
-      "size" : "50x50",
-      "idiom" : "ipad",
-      "filename" : "appicon_100.png",
-      "unassigned" : true,
-      "scale" : "2x"
-    },
-    {
-      "size" : "72x72",
-      "idiom" : "ipad",
-      "filename" : "appicon_72.png",
-      "unassigned" : true,
-      "scale" : "1x"
-    },
-    {
-      "size" : "72x72",
-      "idiom" : "ipad",
-      "filename" : "appicon_144.png",
-      "unassigned" : true,
-      "scale" : "2x"
     }
   ],
   "info" : {
