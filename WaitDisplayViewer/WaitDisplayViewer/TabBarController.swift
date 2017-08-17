@@ -27,4 +27,22 @@ class TabBarController: UITabBarController {
     private func isLandscape(_ size: CGSize) -> Bool {
         return size.width > size.height
     }
+    
+    override open var shouldAutorotate: Bool {
+        get {
+            return false
+        }
+    }
+    
+    override open var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        get {
+            return .landscape
+        }
+    }
+    
+    override open var preferredInterfaceOrientationForPresentation: UIInterfaceOrientation {
+        get {
+            return .landscapeRight
+        }
+    }
 }

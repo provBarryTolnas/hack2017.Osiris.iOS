@@ -43,5 +43,17 @@ class WaitDisplayViewController: UIViewController, WKNavigationDelegate {
             webView.scrollView.setContentOffset(offset, animated: true)
         }
     }
+    
+    override open var shouldAutorotate: Bool {
+        return false
+    }
+    
+    override open var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return .landscape
+    }
+    
+    override open var preferredInterfaceOrientationForPresentation: UIInterfaceOrientation {
+        return .landscapeRight
+    }
 }
 
