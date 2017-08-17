@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:WaitDisplayViewer/WaitDisplayViewer.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Osiris.xcodeproj">
    </FileRef>
    <FileRef
