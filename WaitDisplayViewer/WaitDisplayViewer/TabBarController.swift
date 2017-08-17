@@ -1,0 +1,30 @@
+//
+//  TabViewController.swift
+//  WaitDisplayViewer
+//
+//  Created by Barry on 8/16/17.
+//  Copyright © 2017 Providence. All rights reserved.
+//
+
+import UIKit
+
+class TabBarController: UITabBarController {
+    
+
+    override func viewDidLoad() {
+        if let dental = storyboard?.instantiateViewController(withIdentifier: "dental"),
+            let urgent = storyboard?.instantiateViewController(withIdentifier: "urgent-care") {
+            viewControllers = [dental, urgent]
+        }
+    }
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        let orientation = isLandscape(size) ? "landscape" : "portrait"
+        print(orientation)
+    }
+    
+
+    private func isLandscape(_ size: CGSize) -> Bool {
+        return size.width > size.height
+    }
+}
