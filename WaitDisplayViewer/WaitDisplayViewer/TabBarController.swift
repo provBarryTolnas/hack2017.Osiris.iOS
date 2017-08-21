@@ -14,7 +14,8 @@ class TabBarController: UITabBarController {
     override func viewDidLoad() {
         if let dental = storyboard?.instantiateViewController(withIdentifier: "dental"),
             let urgent = storyboard?.instantiateViewController(withIdentifier: "urgent-care") {
-            viewControllers = [dental, urgent]
+            viewControllers = [urgent,dental]
+            self.tabBar.isHidden = true
         }
     }
     
