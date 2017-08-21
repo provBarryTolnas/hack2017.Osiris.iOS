@@ -9,7 +9,7 @@
 import UIKit
 import WebKit
 
-class WaitDisplayViewController: UIViewController, WKNavigationDelegate {
+class WaitDisplayViewController: UIViewController, WKNavigationDelegate, UIGestureRecognizerDelegate {
     @IBInspectable var url: String = ""
     var webView: WKWebView?
     
@@ -25,8 +25,19 @@ class WaitDisplayViewController: UIViewController, WKNavigationDelegate {
             webView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
             webView.navigationDelegate = self
         }
+        
+        //Install a double-tap recognizer to trigger reload of page
+        let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(WaitDisplayViewController.reload))
+        tapRecognizer.numberOfTapsRequired = 2
+        tapRecognizer.delegate = self
+        view.addGestureRecognizer(tapRecognizer)
+        view.isUserInteractionEnabled = true
     }
     
+    func reload() {
+        print("reload")
+        webView?.reloadFromOrigin()
+    }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -35,13 +46,22 @@ class WaitDisplayViewController: UIViewController, WKNavigationDelegate {
         webView?.load(request)
     }
     
+    //MARK: UIGestureRecognizerDelegate
+    
+    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+        return true
+    }
+    
+    // MARK: UIWebViewDelegate
+    
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         print("finished loading \(webView.url!)")
-        DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(100)) {
-            let offsetY = max(0.0, webView.scrollView.contentSize.height - webView.bounds.size.height)
-            let offset = CGPoint(x: 0, y: offsetY )
-            webView.scrollView.setContentOffset(offset, animated: true)
-        }
+        print("content: \(webView)")
+//        DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(100)) {
+//            let offsetY = max(0.0, webView.scrollView.contentSize.height - webView.bounds.size.height)
+//            let offset = CGPoint(x: 0, y: offsetY )
+//            webView.scrollView.setContentOffset(offset, animated: true)
+//        }
     }
     
     override open var shouldAutorotate: Bool {
