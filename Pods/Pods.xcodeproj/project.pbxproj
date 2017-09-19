@@ -8,96 +8,96 @@
 
 /* Begin PBXBuildFile section */
 		05B1F02560378D28FEBD4E8F6D293216 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		293DEC7B63AEEB7A941CF30B2BEF95BF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		29FEADDF2086FDEA7D5BA87DD23B08C6 /* pb_decode.h in Headers */ = {isa = PBXBuildFile; fileRef = CC2B0CF6AE6BF2645B9E81C603548061 /* pb_decode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		392F2CF142BAA751AC1BB61D8B757D98 /* pb.h in Headers */ = {isa = PBXBuildFile; fileRef = AACF16417F7B6A5674D848B2B658CE3E /* pb.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3A50F5C8ECED9627F2EBD97F61BD376D /* pb_common.c in Sources */ = {isa = PBXBuildFile; fileRef = 3CF3D359ECC7DAF3021428DCF94FC61C /* pb_common.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc -fno-objc-arc -fno-objc-arc"; }; };
-		3DEA79DD12A44739734F5655553291A9 /* Pods-Osiris-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC7579E2A535C1F99FC683DE994951C /* Pods-Osiris-dummy.m */; };
 		468DFD90B6C4DA2F7CFA0C1C89F1B615 /* nanopb-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F856E98627FEBA34AC4356BD4F16EE1D /* nanopb-dummy.m */; };
 		541C5362289CC44D4F067D097F231250 /* GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 56D7F2BBA3B0577B0AD9BFC0548A842B /* GTMDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		54F580BF4588159D6A61F21D15591805 /* pb_decode.c in Sources */ = {isa = PBXBuildFile; fileRef = B3B26323B768B6E5CF25C980F2F95AB0 /* pb_decode.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc -fno-objc-arc"; }; };
 		55D8D5D912CFD2F3584E4553C2EAD734 /* pb_encode.c in Sources */ = {isa = PBXBuildFile; fileRef = 2AE7707D7A9EDC56D302D3A9DB2F70F1 /* pb_encode.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc -fno-objc-arc"; }; };
+		74B8C29E3DA42FEE5CAF18EB555759E0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		806BAA4E00218D70995697C4400BE7A0 /* pb_common.h in Headers */ = {isa = PBXBuildFile; fileRef = 5768DCD5DCE66ADD6BA552AD86300916 /* pb_common.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		81E4B6988FF26F9249B79C6C8CC667B4 /* GoogleToolboxForMac-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 32F7FE07DA1753C2DC18C0BD35FABD5A /* GoogleToolboxForMac-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		93D51748565CFEB9490FBA7DA993C5C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		CF9E8A19F8A18BF7B1391726C478CA43 /* Pods-CareIQ-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6477123364EA13F73983E113ECA64C41 /* Pods-CareIQ-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DBFECCB0BBE3F11CC41A3C1A8C4879D3 /* GTMNSData+zlib.h in Headers */ = {isa = PBXBuildFile; fileRef = 57F1797A40FD306C28F9563F1DDBF00B /* GTMNSData+zlib.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E181395E73163EB702FCE9A21403D67B /* pb_encode.h in Headers */ = {isa = PBXBuildFile; fileRef = 765DC6B7C69275DFE1BDC87D0643FD13 /* pb_encode.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E7115D354B65858DA2063DA221FD92BD /* Pods-Osiris-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DB11FC3739745A042F6CCA64404464C7 /* Pods-Osiris-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F13DF4B284E9AAD4390AEBC49ACB4E72 /* Pods-CareIQ-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E93141BE55CA08E6D7332D035391CCC9 /* Pods-CareIQ-dummy.m */; };
 		F7D889906DECB078EAAECB9D4A320E9C /* GTMNSData+zlib.m in Sources */ = {isa = PBXBuildFile; fileRef = BD519FCDBC8B3800A23DDF14EDD555BB /* GTMNSData+zlib.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		F9D92BA503505CB48EF4ECF0DDF57686 /* nanopb-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 78A7844B55E6AEAF3BD1DE064F2BE574 /* nanopb-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FAC3F3CAABA60EF76069431C5BB5032A /* GoogleToolboxForMac-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 880716A5F40ED603A2FF03304E2EAE65 /* GoogleToolboxForMac-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		451B84D12B8C867755395C2EB5FF9641 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 00103D6C821BE85971C563025527BA5D;
-			remoteInfo = GoogleToolboxForMac;
-		};
-		E826DC1EC5332E53455F254A0BDFACB7 /* PBXContainerItemProxy */ = {
+		C951CE1C8FE5089F29923B28BF7FC50F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = E4DD95323C54A78F879DAB0F1508B8E7;
 			remoteInfo = nanopb;
 		};
+		CFF7DC82546474E14ABFAA26FE09EE22 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00103D6C821BE85971C563025527BA5D;
+			remoteInfo = GoogleToolboxForMac;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00941ACE2299097D0242D31BBDA0B294 /* Pods_Osiris.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Osiris.framework; path = "Pods-Osiris.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C5B3F76ED95F3BCCAB7DCE804E72A9F /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseDatabase.framework; path = Frameworks/FirebaseDatabase.framework; sourceTree = "<group>"; };
-		0DC7579E2A535C1F99FC683DE994951C /* Pods-Osiris-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Osiris-dummy.m"; sourceTree = "<group>"; };
-		1042985D92F582C8F269773F7A825197 /* Pods-Osiris.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Osiris.modulemap"; sourceTree = "<group>"; };
 		1C4B4D9386A453D0035E4A8BE29244AF /* FirebaseNanoPB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseNanoPB.framework; path = Frameworks/FirebaseNanoPB.framework; sourceTree = "<group>"; };
 		1F98FD7FEDD2E9262FA05C30105163D3 /* GoogleToolboxForMac-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleToolboxForMac-prefix.pch"; sourceTree = "<group>"; };
+		20A77071520B88C6090B35D9DB88B331 /* Pods_CareIQ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CareIQ.framework; path = "Pods-CareIQ.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AE7707D7A9EDC56D302D3A9DB2F70F1 /* pb_encode.c */ = {isa = PBXFileReference; includeInIndex = 1; path = pb_encode.c; sourceTree = "<group>"; };
+		2BB559EE76904D3C95078492D88703DF /* Pods-CareIQ-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CareIQ-resources.sh"; sourceTree = "<group>"; };
 		32F7FE07DA1753C2DC18C0BD35FABD5A /* GoogleToolboxForMac-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleToolboxForMac-umbrella.h"; sourceTree = "<group>"; };
 		3CF3D359ECC7DAF3021428DCF94FC61C /* pb_common.c */ = {isa = PBXFileReference; includeInIndex = 1; path = pb_common.c; sourceTree = "<group>"; };
-		3EFB98DC589A6263B3DD6338B8EA1FAD /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GoogleToolboxForMac.framework; path = GoogleToolboxForMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		48C8D87D9D91FC420B00B13A3245E669 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		436047A8AA2FAA519BF16B69177A52CA /* Pods-CareIQ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CareIQ.debug.xcconfig"; sourceTree = "<group>"; };
 		55F9EEC828D24EB6B1208CF02D6689F1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56D7F2BBA3B0577B0AD9BFC0548A842B /* GTMDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
 		5768DCD5DCE66ADD6BA552AD86300916 /* pb_common.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pb_common.h; sourceTree = "<group>"; };
 		57F1797A40FD306C28F9563F1DDBF00B /* GTMNSData+zlib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GTMNSData+zlib.h"; path = "Foundation/GTMNSData+zlib.h"; sourceTree = "<group>"; };
+		6477123364EA13F73983E113ECA64C41 /* Pods-CareIQ-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CareIQ-umbrella.h"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		76490F241939DF08340F65F22208468B /* Pods-Osiris-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Osiris-acknowledgements.plist"; sourceTree = "<group>"; };
+		6E3C6A1C0C599A52F2B46E51B07D977E /* Pods-CareIQ-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CareIQ-frameworks.sh"; sourceTree = "<group>"; };
+		711ECEC4D6E36BCF0516406E8790CCA3 /* Pods-CareIQ.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-CareIQ.modulemap"; sourceTree = "<group>"; };
 		765DC6B7C69275DFE1BDC87D0643FD13 /* pb_encode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pb_encode.h; sourceTree = "<group>"; };
 		77D27A9BD30251145C7878BA5E729E31 /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCore.framework; path = Frameworks/FirebaseCore.framework; sourceTree = "<group>"; };
 		78A7844B55E6AEAF3BD1DE064F2BE574 /* nanopb-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "nanopb-umbrella.h"; sourceTree = "<group>"; };
 		7BE9562C7EFCC143DE11CDC2D6294204 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C8D259161228AD80937A0F8C544CF3F /* GoogleToolboxForMac.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = GoogleToolboxForMac.modulemap; sourceTree = "<group>"; };
+		85FEAFA83EAE1895E71A8B723C456C3D /* Pods-CareIQ-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CareIQ-acknowledgements.plist"; sourceTree = "<group>"; };
 		874FAC58A676B35C675861EBCA1E3D22 /* nanopb.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = nanopb.modulemap; sourceTree = "<group>"; };
 		880716A5F40ED603A2FF03304E2EAE65 /* GoogleToolboxForMac-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GoogleToolboxForMac-dummy.m"; sourceTree = "<group>"; };
-		92BD5AAE9CEF8446D92DAE785A9BC94B /* Pods-Osiris-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Osiris-frameworks.sh"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A3FD1AC46277EA6C7F3C190F4707C092 /* nanopb.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = nanopb.xcconfig; sourceTree = "<group>"; };
 		A99927BD497C953CA6707027449BEE6D /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
 		AACF16417F7B6A5674D848B2B658CE3E /* pb.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pb.h; sourceTree = "<group>"; };
 		AD0E055AAB02750D7D2B2B6C2D448DA0 /* nanopb-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "nanopb-prefix.pch"; sourceTree = "<group>"; };
-		AFA283F1995EB1124279FCF79CAF3BEE /* Pods-Osiris.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Osiris.release.xcconfig"; sourceTree = "<group>"; };
+		B008786D5B963DDBC2D44AD34595682D /* Pods-CareIQ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CareIQ.release.xcconfig"; sourceTree = "<group>"; };
 		B3B26323B768B6E5CF25C980F2F95AB0 /* pb_decode.c */ = {isa = PBXFileReference; includeInIndex = 1; path = pb_decode.c; sourceTree = "<group>"; };
 		BD519FCDBC8B3800A23DDF14EDD555BB /* GTMNSData+zlib.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GTMNSData+zlib.m"; path = "Foundation/GTMNSData+zlib.m"; sourceTree = "<group>"; };
-		C7A8DD73A6B310926CBDA24B58E0CAA8 /* Pods-Osiris-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Osiris-resources.sh"; sourceTree = "<group>"; };
+		C62F1359C26EFE18AEA49FE0497C1B56 /* nanopb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = nanopb.framework; path = nanopb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC2B0CF6AE6BF2645B9E81C603548061 /* pb_decode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pb_decode.h; sourceTree = "<group>"; };
 		D0BBE3EBF5CF974C22C4442430C630A9 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
+		D1CCA0AFE3E4C1BD4D239F932EB62678 /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GoogleToolboxForMac.framework; path = GoogleToolboxForMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1F93434749711842403E33EA480005B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8D68B06D69182C396EE72128A465513 /* GoogleToolboxForMac.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleToolboxForMac.xcconfig; sourceTree = "<group>"; };
-		D98B4E86F7DFB7E4824433A47AD17F51 /* Pods-Osiris.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Osiris.debug.xcconfig"; sourceTree = "<group>"; };
-		DB11FC3739745A042F6CCA64404464C7 /* Pods-Osiris-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Osiris-umbrella.h"; sourceTree = "<group>"; };
-		E2844B2AAE971BB1B31BB6247F204146 /* nanopb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = nanopb.framework; path = nanopb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEA48D79A3CD78402FB6787C9F977BD4 /* Pods-CareIQ-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CareIQ-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E93141BE55CA08E6D7332D035391CCC9 /* Pods-CareIQ-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CareIQ-dummy.m"; sourceTree = "<group>"; };
 		EA204915263836E007C34C4D113303CA /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Core/Sources/Firebase.h; sourceTree = "<group>"; };
-		F441A313C5CD5852DF26AAAFA3515533 /* Pods-Osiris-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Osiris-acknowledgements.markdown"; sourceTree = "<group>"; };
 		F856E98627FEBA34AC4356BD4F16EE1D /* nanopb-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "nanopb-dummy.m"; sourceTree = "<group>"; };
 		FEFAF9AF2523DB5F648457F06E283FB7 /* FirebaseCoreDiagnostics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCoreDiagnostics.framework; path = Frameworks/FirebaseCoreDiagnostics.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		551D35D25841FEBDEBA90BC0F6CDF658 /* Frameworks */ = {
+		6F2BDF7BF9E608664446C769AD531D2C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				293DEC7B63AEEB7A941CF30B2BEF95BF /* Foundation.framework in Frameworks */,
+				74B8C29E3DA42FEE5CAF18EB555759E0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,24 +129,6 @@
 			path = FirebaseAnalytics;
 			sourceTree = "<group>";
 		};
-		19795EBEF00E3BB230B112B3489BB645 /* Pods-Osiris */ = {
-			isa = PBXGroup;
-			children = (
-				48C8D87D9D91FC420B00B13A3245E669 /* Info.plist */,
-				1042985D92F582C8F269773F7A825197 /* Pods-Osiris.modulemap */,
-				F441A313C5CD5852DF26AAAFA3515533 /* Pods-Osiris-acknowledgements.markdown */,
-				76490F241939DF08340F65F22208468B /* Pods-Osiris-acknowledgements.plist */,
-				0DC7579E2A535C1F99FC683DE994951C /* Pods-Osiris-dummy.m */,
-				92BD5AAE9CEF8446D92DAE785A9BC94B /* Pods-Osiris-frameworks.sh */,
-				C7A8DD73A6B310926CBDA24B58E0CAA8 /* Pods-Osiris-resources.sh */,
-				DB11FC3739745A042F6CCA64404464C7 /* Pods-Osiris-umbrella.h */,
-				D98B4E86F7DFB7E4824433A47AD17F51 /* Pods-Osiris.debug.xcconfig */,
-				AFA283F1995EB1124279FCF79CAF3BEE /* Pods-Osiris.release.xcconfig */,
-			);
-			name = "Pods-Osiris";
-			path = "Target Support Files/Pods-Osiris";
-			sourceTree = "<group>";
-		};
 		22241A4BF8D1F82548AF924311538559 /* Core */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,6 +144,14 @@
 			name = encode;
 			sourceTree = "<group>";
 		};
+		3483E6B3234DC07206576BA2D79C3341 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				98EA33C4177751168E1996DA54060902 /* Pods-CareIQ */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
 		3DE0B27FC1248452774F515645D42A65 /* FirebaseCore */ = {
 			isa = PBXGroup;
 			children = (
@@ -169,14 +159,6 @@
 			);
 			name = FirebaseCore;
 			path = FirebaseCore;
-			sourceTree = "<group>";
-		};
-		3DF33D9D834F64EECF775523E7EA2636 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				19795EBEF00E3BB230B112B3489BB645 /* Pods-Osiris */,
-			);
-			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		41B614126BD8F454BAA204063C0E0A6E /* Pods */ = {
@@ -240,8 +222,8 @@
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				41B614126BD8F454BAA204063C0E0A6E /* Pods */,
-				B9241AD139C0F78A5078EFE167A51256 /* Products */,
-				3DF33D9D834F64EECF775523E7EA2636 /* Targets Support Files */,
+				D9087E8D14E908A1AF7FC7A3B4DFB6D9 /* Products */,
+				3483E6B3234DC07206576BA2D79C3341 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -269,6 +251,24 @@
 			);
 			name = FirebaseInstanceID;
 			path = FirebaseInstanceID;
+			sourceTree = "<group>";
+		};
+		98EA33C4177751168E1996DA54060902 /* Pods-CareIQ */ = {
+			isa = PBXGroup;
+			children = (
+				D1F93434749711842403E33EA480005B /* Info.plist */,
+				711ECEC4D6E36BCF0516406E8790CCA3 /* Pods-CareIQ.modulemap */,
+				DEA48D79A3CD78402FB6787C9F977BD4 /* Pods-CareIQ-acknowledgements.markdown */,
+				85FEAFA83EAE1895E71A8B723C456C3D /* Pods-CareIQ-acknowledgements.plist */,
+				E93141BE55CA08E6D7332D035391CCC9 /* Pods-CareIQ-dummy.m */,
+				6E3C6A1C0C599A52F2B46E51B07D977E /* Pods-CareIQ-frameworks.sh */,
+				2BB559EE76904D3C95078492D88703DF /* Pods-CareIQ-resources.sh */,
+				6477123364EA13F73983E113ECA64C41 /* Pods-CareIQ-umbrella.h */,
+				436047A8AA2FAA519BF16B69177A52CA /* Pods-CareIQ.debug.xcconfig */,
+				B008786D5B963DDBC2D44AD34595682D /* Pods-CareIQ.release.xcconfig */,
+			);
+			name = "Pods-CareIQ";
+			path = "Target Support Files/Pods-CareIQ";
 			sourceTree = "<group>";
 		};
 		9C9D89F4065AB9673CF9248F0E8820BD /* Frameworks */ = {
@@ -316,16 +316,6 @@
 			path = nanopb;
 			sourceTree = "<group>";
 		};
-		B9241AD139C0F78A5078EFE167A51256 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				3EFB98DC589A6263B3DD6338B8EA1FAD /* GoogleToolboxForMac.framework */,
-				E2844B2AAE971BB1B31BB6247F204146 /* nanopb.framework */,
-				00941ACE2299097D0242D31BBDA0B294 /* Pods_Osiris.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -340,6 +330,16 @@
 				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		D9087E8D14E908A1AF7FC7A3B4DFB6D9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D1CCA0AFE3E4C1BD4D239F932EB62678 /* GoogleToolboxForMac.framework */,
+				C62F1359C26EFE18AEA49FE0497C1B56 /* nanopb.framework */,
+				20A77071520B88C6090B35D9DB88B331 /* Pods_CareIQ.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		DCA2F2045316182977DBF1C71095BEF5 /* decode */ = {
@@ -387,11 +387,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9C9F9B763AD42D475041548F1E2DF903 /* Headers */ = {
+		592D6FFB513AA385CE4214E8830ECB21 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7115D354B65858DA2063DA221FD92BD /* Pods-Osiris-umbrella.h in Headers */,
+				CF9E8A19F8A18BF7B1391726C478CA43 /* Pods-CareIQ-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,26 +422,7 @@
 			);
 			name = GoogleToolboxForMac;
 			productName = GoogleToolboxForMac;
-			productReference = 3EFB98DC589A6263B3DD6338B8EA1FAD /* GoogleToolboxForMac.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		A64CC72E9B2EDBC75984F2B27454A8F5 /* Pods-Osiris */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 55FE872BDC59FBAD5143E50B9C168D88 /* Build configuration list for PBXNativeTarget "Pods-Osiris" */;
-			buildPhases = (
-				6DA5ADDD1B83F2D92714F66A6CC46524 /* Sources */,
-				551D35D25841FEBDEBA90BC0F6CDF658 /* Frameworks */,
-				9C9F9B763AD42D475041548F1E2DF903 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4391E67463B61070BD883AB2301C1BD6 /* PBXTargetDependency */,
-				F7EC54B4A38B7FA14775120FB5AE5E2A /* PBXTargetDependency */,
-			);
-			name = "Pods-Osiris";
-			productName = "Pods-Osiris";
-			productReference = 00941ACE2299097D0242D31BBDA0B294 /* Pods_Osiris.framework */;
+			productReference = D1CCA0AFE3E4C1BD4D239F932EB62678 /* GoogleToolboxForMac.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		E4DD95323C54A78F879DAB0F1508B8E7 /* nanopb */ = {
@@ -458,7 +439,26 @@
 			);
 			name = nanopb;
 			productName = nanopb;
-			productReference = E2844B2AAE971BB1B31BB6247F204146 /* nanopb.framework */;
+			productReference = C62F1359C26EFE18AEA49FE0497C1B56 /* nanopb.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FC308A35CEA2E2F537DE2DF5FE0E9C9F /* Pods-CareIQ */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C8990DA63BB911E707E4E40EF1FD806 /* Build configuration list for PBXNativeTarget "Pods-CareIQ" */;
+			buildPhases = (
+				6F667677F078E4ABA0594F33A7067478 /* Sources */,
+				6F2BDF7BF9E608664446C769AD531D2C /* Frameworks */,
+				592D6FFB513AA385CE4214E8830ECB21 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				58359E8BBCDE157A0217CEC63192B1FE /* PBXTargetDependency */,
+				5F8B99FAB0BE8A4CDDB9C0B817C5B0F7 /* PBXTargetDependency */,
+			);
+			name = "Pods-CareIQ";
+			productName = "Pods-CareIQ";
+			productReference = 20A77071520B88C6090B35D9DB88B331 /* Pods_CareIQ.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -478,13 +478,13 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = B9241AD139C0F78A5078EFE167A51256 /* Products */;
+			productRefGroup = D9087E8D14E908A1AF7FC7A3B4DFB6D9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				00103D6C821BE85971C563025527BA5D /* GoogleToolboxForMac */,
 				E4DD95323C54A78F879DAB0F1508B8E7 /* nanopb */,
-				A64CC72E9B2EDBC75984F2B27454A8F5 /* Pods-Osiris */,
+				FC308A35CEA2E2F537DE2DF5FE0E9C9F /* Pods-CareIQ */,
 			);
 		};
 /* End PBXProject section */
@@ -510,68 +510,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6DA5ADDD1B83F2D92714F66A6CC46524 /* Sources */ = {
+		6F667677F078E4ABA0594F33A7067478 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DEA79DD12A44739734F5655553291A9 /* Pods-Osiris-dummy.m in Sources */,
+				F13DF4B284E9AAD4390AEBC49ACB4E72 /* Pods-CareIQ-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4391E67463B61070BD883AB2301C1BD6 /* PBXTargetDependency */ = {
+		58359E8BBCDE157A0217CEC63192B1FE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = GoogleToolboxForMac;
 			target = 00103D6C821BE85971C563025527BA5D /* GoogleToolboxForMac */;
-			targetProxy = 451B84D12B8C867755395C2EB5FF9641 /* PBXContainerItemProxy */;
+			targetProxy = CFF7DC82546474E14ABFAA26FE09EE22 /* PBXContainerItemProxy */;
 		};
-		F7EC54B4A38B7FA14775120FB5AE5E2A /* PBXTargetDependency */ = {
+		5F8B99FAB0BE8A4CDDB9C0B817C5B0F7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = nanopb;
 			target = E4DD95323C54A78F879DAB0F1508B8E7 /* nanopb */;
-			targetProxy = E826DC1EC5332E53455F254A0BDFACB7 /* PBXContainerItemProxy */;
+			targetProxy = C951CE1C8FE5089F29923B28BF7FC50F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		225E6E49C99652DF772B2CDAE8D2A55C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D98B4E86F7DFB7E4824433A47AD17F51 /* Pods-Osiris.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Osiris/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Osiris/Pods-Osiris.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Osiris;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		319EFDA581D17E312B29D85515846653 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D8D68B06D69182C396EE72128A465513 /* GoogleToolboxForMac.xcconfig */;
@@ -600,6 +564,42 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		58B0DA3C4FD0D774E4B67AE9885B68DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 436047A8AA2FAA519BF16B69177A52CA /* Pods-CareIQ.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-CareIQ/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CareIQ/Pods-CareIQ.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_CareIQ;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -801,9 +801,9 @@
 			};
 			name = Release;
 		};
-		E8EFFCC4480C6FAC6C03359C608F51A0 /* Release */ = {
+		F1A3BD8B2840006D176DA36DC2A33E76 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AFA283F1995EB1124279FCF79CAF3BEE /* Pods-Osiris.release.xcconfig */;
+			baseConfigurationReference = B008786D5B963DDBC2D44AD34595682D /* Pods-CareIQ.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -817,18 +817,18 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Osiris/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-CareIQ/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Osiris/Pods-Osiris.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-CareIQ/Pods-CareIQ.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Osiris;
+				PRODUCT_NAME = Pods_CareIQ;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -849,11 +849,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		55FE872BDC59FBAD5143E50B9C168D88 /* Build configuration list for PBXNativeTarget "Pods-Osiris" */ = {
+		8C8990DA63BB911E707E4E40EF1FD806 /* Build configuration list for PBXNativeTarget "Pods-CareIQ" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				225E6E49C99652DF772B2CDAE8D2A55C /* Debug */,
-				E8EFFCC4480C6FAC6C03359C608F51A0 /* Release */,
+				58B0DA3C4FD0D774E4B67AE9885B68DE /* Debug */,
+				F1A3BD8B2840006D176DA36DC2A33E76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
