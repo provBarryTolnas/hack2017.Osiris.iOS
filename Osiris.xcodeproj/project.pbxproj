@@ -29,7 +29,6 @@
 		4CF4FC9C1F3DE664003FB089 /* InsuranceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF4FC991F3DE664003FB089 /* InsuranceCollectionViewCell.swift */; };
 		4CF4FC9D1F3DE664003FB089 /* InsuranceCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CF4FC9A1F3DE664003FB089 /* InsuranceCollectionViewCell.xib */; };
 		4CF4FC9E1F3DE664003FB089 /* InsuranceCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CF4FC9A1F3DE664003FB089 /* InsuranceCollectionViewCell.xib */; };
-		79427B78A739082232C46732 /* Pods_Osiris.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F3FBCE14BE344BC4B39081F /* Pods_Osiris.framework */; };
 		7F9964DCBE448DBA213F64DE /* Pods_CareIQ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B75A250C542BA3530AC55F5 /* Pods_CareIQ.framework */; };
 /* End PBXBuildFile section */
 
@@ -73,11 +72,9 @@
 		4C63CE8B1F3D88700056722A /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		4CF4FC991F3DE664003FB089 /* InsuranceCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsuranceCollectionViewCell.swift; sourceTree = "<group>"; };
 		4CF4FC9A1F3DE664003FB089 /* InsuranceCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InsuranceCollectionViewCell.xib; sourceTree = "<group>"; };
-		55D9A1E06F57DB495229B489 /* Pods-Osiris.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Osiris.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Osiris/Pods-Osiris.debug.xcconfig"; sourceTree = "<group>"; };
 		7F3FBCE14BE344BC4B39081F /* Pods_Osiris.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Osiris.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B75A250C542BA3530AC55F5 /* Pods_CareIQ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CareIQ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A711BF28C3BD40140BD1F7A2 /* Pods-CareIQ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CareIQ.release.xcconfig"; path = "Pods/Target Support Files/Pods-CareIQ/Pods-CareIQ.release.xcconfig"; sourceTree = "<group>"; };
-		E932660E8C54F59017C86ED9 /* Pods-Osiris.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Osiris.release.xcconfig"; path = "Pods/Target Support Files/Pods-Osiris/Pods-Osiris.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +82,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79427B78A739082232C46732 /* Pods_Osiris.framework in Frameworks */,
 				7F9964DCBE448DBA213F64DE /* Pods_CareIQ.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -188,8 +184,6 @@
 		DBBBC24CE795D5B3FCEC7CF4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				55D9A1E06F57DB495229B489 /* Pods-Osiris.debug.xcconfig */,
-				E932660E8C54F59017C86ED9 /* Pods-Osiris.release.xcconfig */,
 				04EDD707533720E9D792B451 /* Pods-CareIQ.debug.xcconfig */,
 				A711BF28C3BD40140BD1F7A2 /* Pods-CareIQ.release.xcconfig */,
 			);
