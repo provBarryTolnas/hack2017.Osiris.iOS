@@ -30,6 +30,7 @@
 		4CF4FC9D1F3DE664003FB089 /* InsuranceCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CF4FC9A1F3DE664003FB089 /* InsuranceCollectionViewCell.xib */; };
 		4CF4FC9E1F3DE664003FB089 /* InsuranceCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CF4FC9A1F3DE664003FB089 /* InsuranceCollectionViewCell.xib */; };
 		79427B78A739082232C46732 /* Pods_Osiris.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F3FBCE14BE344BC4B39081F /* Pods_Osiris.framework */; };
+		7F9964DCBE448DBA213F64DE /* Pods_CareIQ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B75A250C542BA3530AC55F5 /* Pods_CareIQ.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04EDD707533720E9D792B451 /* Pods-CareIQ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CareIQ.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CareIQ/Pods-CareIQ.debug.xcconfig"; sourceTree = "<group>"; };
 		4C63CE3D1F3BA43D0056722A /* CareIQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CareIQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C63CE401F3BA43D0056722A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C63CE421F3BA43D0056722A /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +75,8 @@
 		4CF4FC9A1F3DE664003FB089 /* InsuranceCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InsuranceCollectionViewCell.xib; sourceTree = "<group>"; };
 		55D9A1E06F57DB495229B489 /* Pods-Osiris.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Osiris.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Osiris/Pods-Osiris.debug.xcconfig"; sourceTree = "<group>"; };
 		7F3FBCE14BE344BC4B39081F /* Pods_Osiris.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Osiris.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B75A250C542BA3530AC55F5 /* Pods_CareIQ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CareIQ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A711BF28C3BD40140BD1F7A2 /* Pods-CareIQ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CareIQ.release.xcconfig"; path = "Pods/Target Support Files/Pods-CareIQ/Pods-CareIQ.release.xcconfig"; sourceTree = "<group>"; };
 		E932660E8C54F59017C86ED9 /* Pods-Osiris.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Osiris.release.xcconfig"; path = "Pods/Target Support Files/Pods-Osiris/Pods-Osiris.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,6 +86,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				79427B78A739082232C46732 /* Pods_Osiris.framework in Frameworks */,
+				7F9964DCBE448DBA213F64DE /* Pods_CareIQ.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				7F3FBCE14BE344BC4B39081F /* Pods_Osiris.framework */,
+				9B75A250C542BA3530AC55F5 /* Pods_CareIQ.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -184,6 +190,8 @@
 			children = (
 				55D9A1E06F57DB495229B489 /* Pods-Osiris.debug.xcconfig */,
 				E932660E8C54F59017C86ED9 /* Pods-Osiris.release.xcconfig */,
+				04EDD707533720E9D792B451 /* Pods-CareIQ.debug.xcconfig */,
+				A711BF28C3BD40140BD1F7A2 /* Pods-CareIQ.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -259,7 +267,7 @@
 				TargetAttributes = {
 					4C63CE3C1F3BA43D0056722A = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 2BS3RP59JH;
+						DevelopmentTeam = F7XY5R7QXY;
 						ProvisioningStyle = Automatic;
 					};
 					4C63CE521F3BA43D0056722A = {
@@ -342,7 +350,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Osiris-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-CareIQ-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -361,7 +369,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Osiris/Pods-Osiris-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CareIQ/Pods-CareIQ-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E56C9F05769C7A3FAF35EAFE /* [CP] Embed Pods Frameworks */ = {
@@ -370,7 +378,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Osiris/Pods-Osiris-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-CareIQ/Pods-CareIQ-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -381,7 +389,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Osiris/Pods-Osiris-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CareIQ/Pods-CareIQ-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -552,11 +560,12 @@
 		};
 		4C63CE681F3BA43D0056722A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 55D9A1E06F57DB495229B489 /* Pods-Osiris.debug.xcconfig */;
+			baseConfigurationReference = 04EDD707533720E9D792B451 /* Pods-CareIQ.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 2BS3RP59JH;
+				DEVELOPMENT_TEAM = F7XY5R7QXY;
 				INFOPLIST_FILE = Osiris/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.providence.Osiris;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -566,11 +575,12 @@
 		};
 		4C63CE691F3BA43D0056722A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E932660E8C54F59017C86ED9 /* Pods-Osiris.release.xcconfig */;
+			baseConfigurationReference = A711BF28C3BD40140BD1F7A2 /* Pods-CareIQ.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 2BS3RP59JH;
+				DEVELOPMENT_TEAM = F7XY5R7QXY;
 				INFOPLIST_FILE = Osiris/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.providence.Osiris;
 				PRODUCT_NAME = "$(TARGET_NAME)";
